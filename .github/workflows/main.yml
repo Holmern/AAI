@@ -4,9 +4,9 @@ name: Update Data and Notebook
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 jobs:
   notebook_update:
     # The type of runner that the job will run on
