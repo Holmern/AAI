@@ -27,6 +27,7 @@ jobs:
       - name: Update analysis notebook
         run: |
           python -m nltk.downloader punkt
+          python -m nltk.downloader stopwords
           python -m pip install jupyter nbconvert nbformat
           jupyter nbconvert --to notebook --execute 'Mandatory 2 /Mandatory Final/Final AI Cyberbullying.ipynb' --ExecutePreprocessor.kernel_name='python3' --output ../notebook_executed
       - name: commit updated notebook
